@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block main_panel %}
+  <h3>{% block title %}{% trans 'Jarrbo Contact Form' %}{% endblock %}</h3>
+  {% crispy form %}
+
+{% endblock %}

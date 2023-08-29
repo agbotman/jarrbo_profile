@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load email_obfuscator %}
+{% block title %}home{% endblock %}
+
+{% block main_panel %}
+<h1><img class="img-right25" src="{% static "media/pasfoto.jpg" %}">Jarrbo ICT</h1>
+<p>Deze website gebruik ik voor diverse hobby projecten</p>
+<p>Voor verdere informatie kunt u contact met mij opnemen: {{ 'ton@jarrbo.nl'|obfuscate_mailto }}, of kijk even op mijn <a href="https://www.linkedin.com/in/ton-botman-a888425">LinkedIn pagina</a>.</p>
+{% endblock %}
+{% block right_panel %}
+<h1><img class="img-center" src="{% static "media/jarrbo_banner_purple_75.png" %}"></h1>
+{% endblock %}
