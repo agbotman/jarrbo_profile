@@ -1,4 +1,4 @@
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 from django import forms
 from jarrbo_theme.forms import JarrboFormHelper
 from crispy_forms.layout import Submit
